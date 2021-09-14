@@ -1,0 +1,103 @@
+/* 
+DTC stylesheet
+*/
+
+body
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.89em;
+	background-color: #fff;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: "lucida grande", Verdana, Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	color: #002147;
+}
+
+h1
+{
+	text-align: left;
+	font-size: 1.4em;
+	margin-right: 14px;
+}
+
+/*HTML 5 specific*/
+header,footer{
+	display: block;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+section,article,aside
+{
+	display: block;
+	padding: 20px;
+	margin-left: 20%;
+	margin-right: 15%;
+
+}
+
+th, td 
+{ 
+	padding: 5px; 
+}
+
+table 
+{ 
+	border-spacing: 5px; 
+}
+
+
+a:link      /* unvisited link */
+{
+		color:#002147;
+}
+a:visited   /* visited link */
+{
+	color:#002147;
+}
+a:hover  /* mouse over link */
+{
+	color:#EE0000;
+}
+a:active  /* selected link */
+{
+	color:#0000FF;
+}
+
+table.wide-table
+{
+	width:100%
+}
+
+table.person
+{
+	width:80%
+}
+
+img.logo
+{
+	border:0px;
+	height:70px;
+	margin-right: 20px;	
+	float: right;
+}
+
+img.SABSlogo
+{
+	border:0px;
+	height:70px;	
+	float: right;
+	margin-right: 70px;	
+}
+
+#EducationDetails{
+	font-family: "lucida grande", Verdana, Arial, sans-serif;
+	font-style: italic;
+	font-size: 1em;
+	margin-left: 10px;
+}

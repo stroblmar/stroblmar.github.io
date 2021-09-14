@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DTC - Maximilian A R Strobl</title>
+    <link rel="stylesheet" href="./css/homepage.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  	<header>
+  	<div>
+  	<table class="wide-table">
+  		<tr>
+  			<td>
+  				<h1>Maximilian A R Strobl</h1>
+  			</td>
+  			<td>
+                                  <a href="http://www.sabscdt.ox.ac.uk/">
+                                          <img src="./images/UpdatedSABSLogo1.png" class="SABSlogo" alt="SABS logo" align="left" />
+  				</a>
+  				<a href="http://www.dtc.ox.ac.uk">
+                                          <img src="./images/DTClogo.png" class="logo" alt="DTC logo"/>
+  				</a>
+  			</td>
+  		</tr>
+  	</table>
+  	</div>
+  	<hr />
+  </header>
+    <section>
+      <table class="person">
+        <tr>
+           <td>
+              <h2>About Me</h2>
+                <p>
+                 I'm a first year Phd student at the <a href="http://www.sabscdt.ox.ac.uk">Systems Approaches to Biomedical Science CDT</a> at the University of Oxford. I plan to pursue my Phd in mathematical biology with a particular focus on the ecology and evolutionary biology of tissue, and its implications for cancer. Typically, we think of tissue as a perfect cooperation in which cells live, interact and die in harmony. However, recently an understanding has emerged that the conditions might not be quite as paradisical. Our tissues are ecosystems subject to the same ecological and evolutionary forces as those we see acting on the living world around us. Every cell in our body is subject to competition and selection. As a result the nature and composition of the cells in our tissues constantly changes. It is crucial for our body to maintain a working balance between the various cell types, which is why sophisticated mechanisms exist to control the evolution inside our tissues. When these fail, cancer emerges. And not only that. These same ecological forces also control the evolution of the tumour. During my Phd I plan to join the research community seeking to understand the dynamics inside our tissues. Specifically, I will use a combination of mathematical and statistical techniques to study how our ability to treat ovarian cancer is influenced by the microenvironment surrounding the tumour.
+                </p>
+                <p>
+                 Furthermore, from work on phylogeny reconstruction that I've carried out during my undergrad (see also below) I've maintained an active interest in phylogeny inference and in optimisation algorithms in more general.
+               </p>
+          </td>
+          <td>
+            <div align="center">
+              <img src="./images/profile_pic.jpg" height="280" alt="Personal photo - Maximilian Strobl" align="top" />
+              <div> <p>Maximilian A R Strobl</p> </div>
+                <div>
+                   <div>Doctoral Student at the </div>
+                </div>
+                <div>
+                   <div>
+                     <a href="http://www.dtc.ox.ac.uk">Doctoral Training Centre</a>
+                   </div>
+                </div>
+             </div>
+
+             <p align="center">
+                <a href="http://maps.google.co.uk/maps/ms?hl=en&amp;ie=UTF8&amp;t=h&amp;source=embed&amp;msa=0&amp;ll=51.759679,-1.253804&amp;spn=0.005406,0.013937&amp;msid=215252059353732291079.0004a145bd4451e1f1e30">Rex Richards Building</a>,<br> South Parks Road,<br> Oxford,<br> OX1 3QU
+             </p>
+             <div align="center"> <p>I'm a student at</br> <a href="http://www.jesus.ox.ac.uk">Jesus College</a></p>
+             <div align="center"> <p>Email: maximilian.strobl@jesus.ox.ac.uk</a></p> </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr />
+            <h2>Research</h2
+            <hr />
+              <ul>
+           			<li><h3>DTC Research</h3>
+                 I'm currently studying at the DTC and will be pursuing two 11-weeks research projects during the summer before embarking on my Phd in October.
+                 <ul>
+                   <li>My first 11-week project will be on investigating resistance mechanisms in ovarian cancers. I will be based at the <a href="http://labpages.moffitt.org/imo/"> Integrated Mathematical Oncology Group</a>  at the Moffit Cancer Centre in Tampa, Florida.
+                   <li>My second 11-week short project is still to be decided...
+                </ul>
+                <hr />
+                 <li><h3>Phylogeny Reconstruction, Simulated Annealing and Phase Transitions</h3>
+                         <p>
+                           During my undergraduate degree at St Andrews I worked together with <a href="http://www.ed.ac.uk/biology/people/profile/dbarker">Dr Daniel Barker</a> (Now at the University of Edinburgh) on algorithms for phylogeny reconstruction.
+                         </p>
+                         <img src="./images/phase_transition.png" height="250" alt="Phase transition in a simulated annealing search for a phylogenetic tree reconstruction problem" align="right" />
+
+                         <p>
+                           Reconstructing a phylogeny from DNA sequences is a very challenging task. First one has to choose an appropriate model or optimality criterion which describes the underlying evolutionary mechanisms, and then find the tree topology which is most plausible under this criterion. This second step is frequently underrated. In fact, even for studies with a few dozen species, finding the most plausible phylogeny would require examining more trees than there are atoms in the universe; an impossible task! Therefore, in practice heuristic search algorithms are used which seek to come close to the optimum through clever sampling of the search space. While heuristic searches give reasonable solutions within feasible run-times, they ignore a large part of the search space, so that we only obtain limited information about how close our solution is to the optimum, and if there are potentially several equally good optima.
+                         </p>
+
+                         <p>
+                           During a number of summer project Daniel and I worked on further understanding the search characteristics of the simulated annealing heuristic. This algorithm mimics the cooling of a liquid and is a widely used search strategy. When a liquid cools, the atoms sample a series of spatial arrangements always adopting those which improve their free energy but occasionally also adopting arrangements which are worse. Analogously, the algorithm generates a candidate solution from the current solution and then chooses whether to  accept it as the new solution using the following rules:
+                         <ul>
+                           <li> Is the solution better than the previous solution?
+                           <ul>
+                             <li> Yes -> Accept it as the new solution
+                             <li> No -> Accept it with a probability P that depends on how much worse the solution is and the current <i> temperature</i>. The temperature is a parameter that decreases over time according to a <i> cooling schedule </i> and regulates how likely the search accepts worse solutions. Initially it is high allowing the algorithm to move almost freely in the search space. As the temperature decreases, the search is confined to smaller and smaller areas until it homes in on the final (and hopefully optimal) solution.
+                           </ul>
+                         </ul>
+                       </p>
+
+                       <p>
+                         When a liquid cools it goes through a phase transition at which the state of the system fundamentally changes from a liquid to a solid. Intriguingly, a similar transition occurs when we run simulated annealing on the computer. Daniel and I were curious if we could use these transitions to learn something about the search space structure. Specifically:
+                       <ul>
+                         <li> Melting temperatures allow us to distinguish between materials and give insights into the material properties. Can simulated annealing phase transitions be used in the same way to characterise optimisation problems and learn about the search landscape?
+                       </ul>
+                       </p>
+
+                       <p>
+                        In order to investigate this hypothesis, Daniel and I recorded the phase transitions in 30 different phylogeny inference problems we obtained from the literature. Our study (<a href="http://dx.doi.org/10.1016/j.ympev.2016.05.001">Link</a>), which to the best of our knowledge is the most comprehensive study on phase transitions so far, showed that there is a considerable difference between the phase transitions in different problems. This supports the idea that it might be possible to use the phase transitions to learn about the search space landscape. We also attempted to understand the potential link between the transition and the characterstics of the search space in more detail with some (though) limited success. If you are interested in finding out more, have a look at our paper(<a href="http://dx.doi.org/10.1016/j.ympev.2016.05.001">Link</a>) and feel free to get in touch.
+                       </p>
+
+                       <u><b>Further Reading</b></u>
+                       <ul>
+                         <li> Our Paper: Maximilian A.R. Strobl, Daniel Barker, <i><a href="http://dx.doi.org/10.1016/j.ympev.2016.05.001"> On simulated annealing phase transitions in phylogeny reconstruction</a></i>, Molecular Phylogenetics and Evolution, Volume 101, August 2016, Pages 46-55.
+                         <li> The original papers on simulated annealing. The algorithm was discovered almost simultanously in the US and USSR. Both the paper by the American group (<a href="http://science.sciencemag.org/content/220/4598/671.long">Link</a>) and the Czechoslovakian group (<a href="http://link.springer.com/article/10.1007/BF00940812">Link</a>) are great reads.
+                         <li> A fantastic book on simulated annealing. Short yet very comprehensive and brilliantly written:</br>
+                           P. Salamon, P. Sibani, R. <i>Frost, Facts, Conjectures, and Improvements for Simulated Annealing</i>, Society for Industrial and Applied Mathematics, Philadelphia (2002)
+                         <li> A really interesting study on the structure of the search space of optimisation problems:</br>
+                           M. Tayarani-Najaran, A. Prügel-Bennett. <i><a href="http://ieeexplore.ieee.org/document/6595563/">On the landscape of combinatorial optimization problems</a></i>. IEEE Trans. Evolut. Comput., 18 (2014), pp. 420–434
+
+             </ul>
+             <p> I would like to thank <a href="http://www.genetics.org.uk">the Genetics Society</a>, <a href="http://www.bbsrc.ac.uk">the BBSRC</a> and the <a href="http://www.st-andrews.ac.uk">University of St Andrews</a> for kindly funding this work. </p>
+           </td>
+         </tr>
+         <tr>
+           <td colspan="2">
+             <hr />
+             <h2>Background</h2
+               <ul>
+                 <li><b>2016-2020 - University of Oxford, <I>United Kingdom </I> </b> </br>
+                   <div id="EducationDetails"> PhD at the EPSRC & MRC Systems Approaches to Biomedical Science Centre for Doctoral Training </div>
+                 <li><b>2015-2016 - University of Oxford, <I>United Kingdom </I> </b> </br>
+                   <div id="EducationDetails"> MSc Mathematical Modelling and Scientific Computing</br>
+                    <ul>
+                      <li> <b>Dissertation:</b> A Mathematical Model of Phenotype Competition in an Invading Tumour <b>Supervisors:</b> Professor Philip Maini and Dr Alexander Anderson </li>
+                    </ul>
+                   </div>
+                <li><b>2011-2015 - University of St Andrews, <I>United Kingdom </I> </b> </br>
+                  <div id="EducationDetails"> BSc (Honours) Mathematics</br>
+                  <ul>
+                    <li> <b>Dissertation:</b> Analysing Animal Movement Data using Hidden Markov Models</br>
+                    <b>Supervisor:</b> Dr Roland Langrock </li>
+                  </ul>
+                  </div>
+                <li><b>2005-2011 - Scuola Europea di Varese, <I>Italy </I> </b> </br>
+                  <div id="EducationDetails"> European Baccalaureate Diploma</div>
+              </ul>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr />
+          	<h2>Conferences</h2>
+          		<ul>
+                <li> <b>2016: 6th IMO Workshop on Cancer Modelling on Drug Resistance - <i>Tampa, US</i>.</b>
+                  </br> <div id="EducationDetails">I was part of Team Blue building a cellular automata model to explore the emergence of drug resistance in lung cancers.</div>
+                <li> <b>2016: Society of Experimental Biology - Workshop on Multiscale Modelling - <i>Oxford, UK</i>.</b>
+                  </br> <div id="EducationDetails">Two really interesting days on multiscale models across different biological disciplines.</div>
+                <li> <b>2016: Ecology and Evolution of Cancer Summer School - <i>Cambridge, UK</i>.</b>
+                </br> <div id="EducationDetails">An intense but very insightful week on the role of the microenvironment in tumour formation, progression and treatment.</div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr />
+          	<h2>Publications</h2>
+          		<ul>
+                <li> Maximilian A.R. Strobl, Daniel Barker, <i><a href="http://dx.doi.org/10.1016/j.ympev.2016.05.001"> On simulated annealing phase transitions in phylogeny reconstruction</a></i>, Molecular Phylogenetics and Evolution, Volume 101, August 2016, Pages 46-55.
+              </ul>
+          </td>
+        </tr>
+     </table>
+    </section>
+  <footer>
+  </footer>
+  </body>
+</html>
